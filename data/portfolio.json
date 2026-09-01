@@ -1,0 +1,355 @@
+{
+ "_disclaimer": "SYNTHETIC ownership data for demonstration. Share counts, accounts and cost bases are generated, not real holdings. All company fundamentals referenced against this book come from SEC 10-K filings.",
+ "as_of": "2026-09-01",
+ "base_currency": "USD",
+ "valuation_basis": "cost",
+ "generator": {
+  "seed": 20240917,
+  "method": "reported diluted EPS x seeded sector P/E band"
+ },
+ "accounts": [
+  {
+   "account_id": "ACC-TAXABLE-01",
+   "name": "Core Taxable Brokerage",
+   "type": "taxable_brokerage",
+   "owner": "primary",
+   "objective": "Long-term growth with a technology and consumer tilt",
+   "cash": 84000.0,
+   "positions": [
+    {
+     "ticker": "AAPL",
+     "company": "Apple Inc.",
+     "sector": "Information Technology",
+     "industry": "Consumer Electronics",
+     "shares": 1400,
+     "purchase_year": 2020,
+     "cost_per_share": 73.88,
+     "cost_basis": 103432.0
+    },
+    {
+     "ticker": "MSFT",
+     "company": "Microsoft Corporation",
+     "sector": "Information Technology",
+     "industry": "Software & Cloud",
+     "shares": 900,
+     "purchase_year": 2020,
+     "cost_per_share": 206.81,
+     "cost_basis": 186129.0
+    },
+    {
+     "ticker": "NVDA",
+     "company": "NVIDIA Corporation",
+     "sector": "Information Technology",
+     "industry": "Semiconductors",
+     "shares": 6000,
+     "purchase_year": 2021,
+     "cost_per_share": 6.38,
+     "cost_basis": 38280.0
+    },
+    {
+     "ticker": "GOOGL",
+     "company": "Alphabet Inc.",
+     "sector": "Communication Services",
+     "industry": "Interactive Media",
+     "shares": 1100,
+     "purchase_year": 2021,
+     "cost_per_share": 108.4,
+     "cost_basis": 119240.0
+    },
+    {
+     "ticker": "AMZN",
+     "company": "Amazon.com, Inc.",
+     "sector": "Consumer Discretionary",
+     "industry": "Broadline Retail",
+     "shares": 1500,
+     "purchase_year": 2022,
+     "cost_per_share": 35.51,
+     "cost_basis": 53265.0
+    },
+    {
+     "ticker": "META",
+     "company": "Meta Platforms, Inc.",
+     "sector": "Communication Services",
+     "industry": "Interactive Media",
+     "shares": 450,
+     "purchase_year": 2022,
+     "cost_per_share": 195.42,
+     "cost_basis": 87939.0
+    },
+    {
+     "ticker": "AVGO",
+     "company": "Broadcom Inc.",
+     "sector": "Information Technology",
+     "industry": "Semiconductors",
+     "shares": 900,
+     "purchase_year": 2023,
+     "cost_per_share": 95.93,
+     "cost_basis": 86337.0
+    },
+    {
+     "ticker": "COST",
+     "company": "Costco Wholesale Corporation",
+     "sector": "Consumer Staples",
+     "industry": "Consumer Staples Retail",
+     "shares": 180,
+     "purchase_year": 2021,
+     "cost_per_share": 221.76,
+     "cost_basis": 39916.8
+    },
+    {
+     "ticker": "HD",
+     "company": "The Home Depot, Inc.",
+     "sector": "Consumer Discretionary",
+     "industry": "Specialty Retail",
+     "shares": 260,
+     "purchase_year": 2020,
+     "cost_per_share": 380.42,
+     "cost_basis": 98909.2
+    },
+    {
+     "ticker": "NFLX",
+     "company": "Netflix, Inc.",
+     "sector": "Communication Services",
+     "industry": "Entertainment",
+     "shares": 320,
+     "purchase_year": 2023,
+     "cost_per_share": 27.76,
+     "cost_basis": 8883.2
+    }
+   ],
+   "total_cost_basis": 822331.2,
+   "total_value_at_cost": 906331.2
+  },
+  {
+   "account_id": "ACC-IRA-02",
+   "name": "Rollover IRA",
+   "type": "traditional_ira",
+   "owner": "primary",
+   "objective": "Balanced core with dividend and healthcare exposure",
+   "cash": 41500.0,
+   "positions": [
+    {
+     "ticker": "JNJ",
+     "company": "Johnson & Johnson",
+     "sector": "Health Care",
+     "industry": "Pharmaceuticals",
+     "shares": 700,
+     "purchase_year": 2019,
+     "cost_per_share": 103.75,
+     "cost_basis": 72625.0
+    },
+    {
+     "ticker": "UNH",
+     "company": "UnitedHealth Group Incorporated",
+     "sector": "Health Care",
+     "industry": "Managed Care",
+     "shares": 210,
+     "purchase_year": 2020,
+     "cost_per_share": 346.44,
+     "cost_basis": 72752.4
+    },
+    {
+     "ticker": "LLY",
+     "company": "Eli Lilly and Company",
+     "sector": "Health Care",
+     "industry": "Pharmaceuticals",
+     "shares": 300,
+     "purchase_year": 2021,
+     "cost_per_share": 118.54,
+     "cost_basis": 35562.0
+    },
+    {
+     "ticker": "PG",
+     "company": "The Procter & Gamble Company",
+     "sector": "Consumer Staples",
+     "industry": "Household Products",
+     "shares": 620,
+     "purchase_year": 2019,
+     "cost_per_share": 32.44,
+     "cost_basis": 20112.8
+    },
+    {
+     "ticker": "KO",
+     "company": "The Coca-Cola Company",
+     "sector": "Consumer Staples",
+     "industry": "Beverages",
+     "shares": 1900,
+     "purchase_year": 2019,
+     "cost_per_share": 51.17,
+     "cost_basis": 97223.0
+    },
+    {
+     "ticker": "PEP",
+     "company": "PepsiCo, Inc.",
+     "sector": "Consumer Staples",
+     "industry": "Beverages",
+     "shares": 480,
+     "purchase_year": 2020,
+     "cost_per_share": 100.55,
+     "cost_basis": 48264.0
+    },
+    {
+     "ticker": "JPM",
+     "company": "JPMorgan Chase & Co.",
+     "sector": "Financials",
+     "industry": "Diversified Banks",
+     "shares": 640,
+     "purchase_year": 2020,
+     "cost_per_share": 131.9,
+     "cost_basis": 84416.0
+    },
+    {
+     "ticker": "GS",
+     "company": "The Goldman Sachs Group, Inc.",
+     "sector": "Financials",
+     "industry": "Investment Banking",
+     "shares": 150,
+     "purchase_year": 2021,
+     "cost_per_share": 555.75,
+     "cost_basis": 83362.5
+    },
+    {
+     "ticker": "PFE",
+     "company": "Pfizer Inc.",
+     "sector": "Health Care",
+     "industry": "Pharmaceuticals",
+     "shares": 1500,
+     "purchase_year": 2019,
+     "cost_per_share": 65.98,
+     "cost_basis": 98970.0
+    },
+    {
+     "ticker": "XOM",
+     "company": "Exxon Mobil Corporation",
+     "sector": "Energy",
+     "industry": "Integrated Oil & Gas",
+     "shares": 900,
+     "purchase_year": 2021,
+     "cost_per_share": 67.24,
+     "cost_basis": 60516.0
+    }
+   ],
+   "total_cost_basis": 673803.7,
+   "total_value_at_cost": 715303.7
+  },
+  {
+   "account_id": "ACC-401K-03",
+   "name": "Employer 401(k)",
+   "type": "employer_401k",
+   "owner": "primary",
+   "objective": "Diversified defensive sleeve with income focus",
+   "cash": 22750.0,
+   "positions": [
+    {
+     "ticker": "WMT",
+     "company": "Walmart Inc.",
+     "sector": "Consumer Staples",
+     "industry": "Consumer Staples Retail",
+     "shares": 900,
+     "purchase_year": 2021,
+     "cost_per_share": 40.35,
+     "cost_basis": 36315.0
+    },
+    {
+     "ticker": "CVX",
+     "company": "Chevron Corporation",
+     "sector": "Energy",
+     "industry": "Integrated Oil & Gas",
+     "shares": 420,
+     "purchase_year": 2021,
+     "cost_per_share": 109.7,
+     "cost_basis": 46074.0
+    },
+    {
+     "ticker": "CAT",
+     "company": "Caterpillar Inc.",
+     "sector": "Industrials",
+     "industry": "Machinery",
+     "shares": 190,
+     "purchase_year": 2020,
+     "cost_per_share": 124.51,
+     "cost_basis": 23656.9
+    },
+    {
+     "ticker": "UPS",
+     "company": "United Parcel Service, Inc.",
+     "sector": "Industrials",
+     "industry": "Air Freight & Logistics",
+     "shares": 340,
+     "purchase_year": 2021,
+     "cost_per_share": 363.96,
+     "cost_basis": 123746.4
+    },
+    {
+     "ticker": "LIN",
+     "company": "Linde plc",
+     "sector": "Materials",
+     "industry": "Industrial Gases",
+     "shares": 150,
+     "purchase_year": 2020,
+     "cost_per_share": 72.03,
+     "cost_basis": 10804.5
+    },
+    {
+     "ticker": "NEE",
+     "company": "NextEra Energy, Inc.",
+     "sector": "Utilities",
+     "industry": "Electric Utilities",
+     "shares": 700,
+     "purchase_year": 2020,
+     "cost_per_share": 24.26,
+     "cost_basis": 16982.0
+    },
+    {
+     "ticker": "AMT",
+     "company": "American Tower Corporation",
+     "sector": "Real Estate",
+     "industry": "Telecom REITs",
+     "shares": 210,
+     "purchase_year": 2021,
+     "cost_per_share": 130.12,
+     "cost_basis": 27325.2
+    },
+    {
+     "ticker": "ABBV",
+     "company": "AbbVie Inc.",
+     "sector": "Health Care",
+     "industry": "Biotechnology",
+     "shares": 400,
+     "purchase_year": 2020,
+     "cost_per_share": 40.46,
+     "cost_basis": 16184.0
+    },
+    {
+     "ticker": "MA",
+     "company": "Mastercard Incorporated",
+     "sector": "Financials",
+     "industry": "Payments",
+     "shares": 190,
+     "purchase_year": 2021,
+     "cost_per_share": 104.96,
+     "cost_basis": 19942.4
+    },
+    {
+     "ticker": "BA",
+     "company": "The Boeing Company",
+     "sector": "Industrials",
+     "industry": "Aerospace & Defense",
+     "shares": 260,
+     "purchase_year": 2022,
+     "cost_per_share": 65.78,
+     "cost_basis": 17102.8
+    }
+   ],
+   "total_cost_basis": 338133.2,
+   "total_value_at_cost": 360883.2
+  }
+ ],
+ "totals": {
+  "cash": 148250.0,
+  "cost_basis": 1834268.1,
+  "value_at_cost": 1982518.1,
+  "positions": 30,
+  "distinct_tickers": 30
+ }
+}

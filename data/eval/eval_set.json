@@ -1,0 +1,2320 @@
+{
+ "_note": "Gold labels derived from data/financials.json and the corpus payloads, not hand-annotated. Regenerate with scripts.build_eval_set.",
+ "seed": 7,
+ "cases": [
+  {
+   "family": "lookup",
+   "question": "What was Bank of America Corporation's revenue in FY2020?",
+   "gold_doc_ids": [
+    "BAC-FY2020-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "BAC"
+    ],
+    "fiscal_years": [
+     2020
+    ],
+    "metrics": [
+     "revenue"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-000"
+  },
+  {
+   "family": "lookup",
+   "question": "What was MA's cash in FY2023?",
+   "gold_doc_ids": [
+    "MA-FY2023-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "MA"
+    ],
+    "fiscal_years": [
+     2023
+    ],
+    "metrics": [
+     "cash_and_equivalents"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-001"
+  },
+  {
+   "family": "lookup",
+   "question": "What was LLY's current ratio in fiscal 2022?",
+   "gold_doc_ids": [
+    "LLY-FY2022-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "LLY"
+    ],
+    "fiscal_years": [
+     2022
+    ],
+    "metrics": [
+     "current_ratio"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-002"
+  },
+  {
+   "family": "lookup",
+   "question": "What was AVGO's diluted EPS in FY'25?",
+   "gold_doc_ids": [
+    "AVGO-FY2025-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AVGO"
+    ],
+    "fiscal_years": [
+     2025
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-003"
+  },
+  {
+   "family": "lookup",
+   "question": "What was AMT's cash in FY2022?",
+   "gold_doc_ids": [
+    "AMT-FY2022-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AMT"
+    ],
+    "fiscal_years": [
+     2022
+    ],
+    "metrics": [
+     "cash_and_equivalents"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-004"
+  },
+  {
+   "family": "lookup",
+   "question": "What was pep's diluted EPS in fiscal 2022?",
+   "gold_doc_ids": [
+    "PEP-FY2022-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "PEP"
+    ],
+    "fiscal_years": [
+     2022
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-005"
+  },
+  {
+   "family": "lookup",
+   "question": "What was Linde plc's cash generation in FY'25?",
+   "gold_doc_ids": [
+    "LIN-FY2025-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "LIN"
+    ],
+    "fiscal_years": [
+     2025
+    ],
+    "metrics": [
+     "free_cash_flow"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-006"
+  },
+  {
+   "family": "lookup",
+   "question": "What was The Home Depot, Inc.'s debt to equity in FY2021?",
+   "gold_doc_ids": [
+    "HD-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "HD"
+    ],
+    "fiscal_years": [
+     2021
+    ],
+    "metrics": [
+     "debt_to_equity"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-007"
+  },
+  {
+   "family": "lookup",
+   "question": "What was cvx's top line in the 2024 fiscal year?",
+   "gold_doc_ids": [
+    "CVX-FY2024-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CVX"
+    ],
+    "fiscal_years": [
+     2024
+    ],
+    "metrics": [
+     "revenue"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-008"
+  },
+  {
+   "family": "lookup",
+   "question": "What was american tower's operating margin in FY2022?",
+   "gold_doc_ids": [
+    "AMT-FY2022-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AMT"
+    ],
+    "fiscal_years": [
+     2022
+    ],
+    "metrics": [
+     "operating_margin"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-009"
+  },
+  {
+   "family": "lookup",
+   "question": "What was costco wholesale's profit margin in fiscal 2020?",
+   "gold_doc_ids": [
+    "COST-FY2020-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "COST"
+    ],
+    "fiscal_years": [
+     2020
+    ],
+    "metrics": [
+     "net_margin"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-010"
+  },
+  {
+   "family": "lookup",
+   "question": "What was Pfizer Inc.'s net margin in fiscal 2021?",
+   "gold_doc_ids": [
+    "PFE-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "PFE"
+    ],
+    "fiscal_years": [
+     2021
+    ],
+    "metrics": [
+     "net_margin"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-011"
+  },
+  {
+   "family": "lookup",
+   "question": "What was AMZN's cash from operations in fiscal 2025?",
+   "gold_doc_ids": [
+    "AMZN-FY2025-cash_flow"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AMZN"
+    ],
+    "fiscal_years": [
+     2025
+    ],
+    "metrics": [
+     "operating_cash_flow"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-012"
+  },
+  {
+   "family": "lookup",
+   "question": "What was gpu maker's current ratio in FY'24?",
+   "gold_doc_ids": [
+    "NVDA-FY2024-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "NVDA"
+    ],
+    "fiscal_years": [
+     2024
+    ],
+    "metrics": [
+     "current_ratio"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-013"
+  },
+  {
+   "family": "lookup",
+   "question": "What was visa's profit margin in FY2023?",
+   "gold_doc_ids": [
+    "V-FY2023-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "V"
+    ],
+    "fiscal_years": [
+     2023
+    ],
+    "metrics": [
+     "net_margin"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-014"
+  },
+  {
+   "family": "lookup",
+   "question": "What was Salesforce, Inc.'s ROE in fiscal 2022?",
+   "gold_doc_ids": [
+    "CRM-FY2022-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CRM"
+    ],
+    "fiscal_years": [
+     2022
+    ],
+    "metrics": [
+     "roe"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-015"
+  },
+  {
+   "family": "lookup",
+   "question": "What was nextera energy's book value in the 2024 fiscal year?",
+   "gold_doc_ids": [
+    "NEE-FY2024-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "NEE"
+    ],
+    "fiscal_years": [
+     2024
+    ],
+    "metrics": [
+     "shareholders_equity"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-016"
+  },
+  {
+   "family": "lookup",
+   "question": "What was V's net margin in FY2019?",
+   "gold_doc_ids": [
+    "V-FY2019-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "V"
+    ],
+    "fiscal_years": [
+     2019
+    ],
+    "metrics": [
+     "net_margin"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-017"
+  },
+  {
+   "family": "lookup",
+   "question": "What was chevron's diluted EPS in FY2019?",
+   "gold_doc_ids": [
+    "CVX-FY2019-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CVX"
+    ],
+    "fiscal_years": [
+     2019
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-018"
+  },
+  {
+   "family": "lookup",
+   "question": "What was Johnson & Johnson's total assets in fiscal 2022?",
+   "gold_doc_ids": [
+    "JNJ-FY2022-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "JNJ"
+    ],
+    "fiscal_years": [
+     2022
+    ],
+    "metrics": [
+     "total_assets"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-019"
+  },
+  {
+   "family": "lookup",
+   "question": "What was JNJ's borrowings in FY'23?",
+   "gold_doc_ids": [
+    "JNJ-FY2023-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "JNJ"
+    ],
+    "fiscal_years": [
+     2023
+    ],
+    "metrics": [
+     "long_term_debt"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-020"
+  },
+  {
+   "family": "lookup",
+   "question": "What was procter & gamble's research spend in the 2024 fiscal year?",
+   "gold_doc_ids": [
+    "PG-FY2024-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "PG"
+    ],
+    "fiscal_years": [
+     2024
+    ],
+    "metrics": [
+     "rnd_expense"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-021"
+  },
+  {
+   "family": "lookup",
+   "question": "What was WMT's current ratio in FY2020?",
+   "gold_doc_ids": [
+    "WMT-FY2020-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "WMT"
+    ],
+    "fiscal_years": [
+     2020
+    ],
+    "metrics": [
+     "current_ratio"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-022"
+  },
+  {
+   "family": "lookup",
+   "question": "What was wal-mart's shareholders equity in FY2019?",
+   "gold_doc_ids": [
+    "WMT-FY2019-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "WMT"
+    ],
+    "fiscal_years": [
+     2019
+    ],
+    "metrics": [
+     "shareholders_equity"
+    ]
+   },
+   "expected_intent": "company_lookup",
+   "id": "lookup-023"
+  },
+  {
+   "family": "yoy",
+   "question": "How did unh's EBIT change from FY2022 to FY2023?",
+   "gold_doc_ids": [
+    "UNH-FY2023-yoy_analysis",
+    "UNH-FY2023-income_statement",
+    "UNH-FY2022-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "UNH"
+    ],
+    "fiscal_years": [
+     2022,
+     2023
+    ],
+    "metrics": [
+     "operating_income"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-024"
+  },
+  {
+   "family": "yoy",
+   "question": "How did avgo's net sales change from FY2021 to FY2022?",
+   "gold_doc_ids": [
+    "AVGO-FY2022-yoy_analysis",
+    "AVGO-FY2022-income_statement",
+    "AVGO-FY2021-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AVGO"
+    ],
+    "fiscal_years": [
+     2021,
+     2022
+    ],
+    "metrics": [
+     "revenue"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-025"
+  },
+  {
+   "family": "yoy",
+   "question": "How did orcl's bottom line change from FY2024 to FY2025?",
+   "gold_doc_ids": [
+    "ORCL-FY2025-yoy_analysis",
+    "ORCL-FY2025-income_statement",
+    "ORCL-FY2024-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "ORCL"
+    ],
+    "fiscal_years": [
+     2024,
+     2025
+    ],
+    "metrics": [
+     "net_income"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-026"
+  },
+  {
+   "family": "yoy",
+   "question": "How did cvx's profit margin change from FY2021 to FY2022?",
+   "gold_doc_ids": [
+    "CVX-FY2022-yoy_analysis",
+    "CVX-FY2022-ratios",
+    "CVX-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CVX"
+    ],
+    "fiscal_years": [
+     2021,
+     2022
+    ],
+    "metrics": [
+     "net_margin"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-027"
+  },
+  {
+   "family": "yoy",
+   "question": "How did goldman's bottom line change from FY2023 to FY2024?",
+   "gold_doc_ids": [
+    "GS-FY2024-yoy_analysis",
+    "GS-FY2024-income_statement",
+    "GS-FY2023-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "GS"
+    ],
+    "fiscal_years": [
+     2023,
+     2024
+    ],
+    "metrics": [
+     "net_income"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-028"
+  },
+  {
+   "family": "yoy",
+   "question": "How did boeing's diluted EPS change from FY2020 to FY2021?",
+   "gold_doc_ids": [
+    "BA-FY2021-yoy_analysis",
+    "BA-FY2021-income_statement",
+    "BA-FY2020-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "BA"
+    ],
+    "fiscal_years": [
+     2020,
+     2021
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-029"
+  },
+  {
+   "family": "yoy",
+   "question": "How did GS's free cash flow change from FY2023 to FY2024?",
+   "gold_doc_ids": [
+    "GS-FY2024-yoy_analysis",
+    "GS-FY2024-ratios",
+    "GS-FY2023-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "GS"
+    ],
+    "fiscal_years": [
+     2023,
+     2024
+    ],
+    "metrics": [
+     "free_cash_flow"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-030"
+  },
+  {
+   "family": "yoy",
+   "question": "How did xom's earnings per share change from FY2020 to FY2021?",
+   "gold_doc_ids": [
+    "XOM-FY2021-yoy_analysis",
+    "XOM-FY2021-income_statement",
+    "XOM-FY2020-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "XOM"
+    ],
+    "fiscal_years": [
+     2020,
+     2021
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-031"
+  },
+  {
+   "family": "yoy",
+   "question": "How did XOM's net earnings change from FY2019 to FY2020?",
+   "gold_doc_ids": [
+    "XOM-FY2020-yoy_analysis",
+    "XOM-FY2020-income_statement",
+    "XOM-FY2019-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "XOM"
+    ],
+    "fiscal_years": [
+     2019,
+     2020
+    ],
+    "metrics": [
+     "net_income"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-032"
+  },
+  {
+   "family": "yoy",
+   "question": "How did buffett's bottom line change from FY2024 to FY2025?",
+   "gold_doc_ids": [
+    "BRK-B-FY2025-yoy_analysis",
+    "BRK-B-FY2025-income_statement",
+    "BRK-B-FY2024-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "BRK-B"
+    ],
+    "fiscal_years": [
+     2024,
+     2025
+    ],
+    "metrics": [
+     "net_income"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-033"
+  },
+  {
+   "family": "yoy",
+   "question": "How did Amazon.com, Inc.'s diluted EPS change from FY2019 to FY2020?",
+   "gold_doc_ids": [
+    "AMZN-FY2020-yoy_analysis",
+    "AMZN-FY2020-income_statement",
+    "AMZN-FY2019-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AMZN"
+    ],
+    "fiscal_years": [
+     2019,
+     2020
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-034"
+  },
+  {
+   "family": "yoy",
+   "question": "How did amt's earnings per share change from FY2021 to FY2022?",
+   "gold_doc_ids": [
+    "AMT-FY2022-yoy_analysis",
+    "AMT-FY2022-income_statement",
+    "AMT-FY2021-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AMT"
+    ],
+    "fiscal_years": [
+     2021,
+     2022
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-035"
+  },
+  {
+   "family": "yoy",
+   "question": "How did Netflix, Inc.'s diluted EPS change from FY2022 to FY2023?",
+   "gold_doc_ids": [
+    "NFLX-FY2023-yoy_analysis",
+    "NFLX-FY2023-income_statement",
+    "NFLX-FY2022-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "NFLX"
+    ],
+    "fiscal_years": [
+     2022,
+     2023
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-036"
+  },
+  {
+   "family": "yoy",
+   "question": "How did google's diluted EPS change from FY2022 to FY2023?",
+   "gold_doc_ids": [
+    "GOOGL-FY2023-yoy_analysis",
+    "GOOGL-FY2023-income_statement",
+    "GOOGL-FY2022-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "GOOGL"
+    ],
+    "fiscal_years": [
+     2022,
+     2023
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-037"
+  },
+  {
+   "family": "yoy",
+   "question": "How did NKE's profit change from FY2020 to FY2021?",
+   "gold_doc_ids": [
+    "NKE-FY2021-yoy_analysis",
+    "NKE-FY2021-income_statement",
+    "NKE-FY2020-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "NKE"
+    ],
+    "fiscal_years": [
+     2020,
+     2021
+    ],
+    "metrics": [
+     "net_income"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-038"
+  },
+  {
+   "family": "yoy",
+   "question": "How did KO's operating margin change from FY2022 to FY2023?",
+   "gold_doc_ids": [
+    "KO-FY2023-yoy_analysis",
+    "KO-FY2023-ratios",
+    "KO-FY2022-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "KO"
+    ],
+    "fiscal_years": [
+     2022,
+     2023
+    ],
+    "metrics": [
+     "operating_margin"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-039"
+  },
+  {
+   "family": "yoy",
+   "question": "How did visa's operating profitability change from FY2021 to FY2022?",
+   "gold_doc_ids": [
+    "V-FY2022-yoy_analysis",
+    "V-FY2022-ratios",
+    "V-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "V"
+    ],
+    "fiscal_years": [
+     2021,
+     2022
+    ],
+    "metrics": [
+     "operating_margin"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-040"
+  },
+  {
+   "family": "yoy",
+   "question": "How did dis's diluted EPS change from FY2022 to FY2023?",
+   "gold_doc_ids": [
+    "DIS-FY2023-yoy_analysis",
+    "DIS-FY2023-income_statement",
+    "DIS-FY2022-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "DIS"
+    ],
+    "fiscal_years": [
+     2022,
+     2023
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-041"
+  },
+  {
+   "family": "yoy",
+   "question": "How did AAPL's diluted EPS change from FY2024 to FY2025?",
+   "gold_doc_ids": [
+    "AAPL-FY2025-yoy_analysis",
+    "AAPL-FY2025-income_statement",
+    "AAPL-FY2024-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AAPL"
+    ],
+    "fiscal_years": [
+     2024,
+     2025
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-042"
+  },
+  {
+   "family": "yoy",
+   "question": "How did Costco Wholesale Corporation's net income change from FY2020 to FY2021?",
+   "gold_doc_ids": [
+    "COST-FY2021-yoy_analysis",
+    "COST-FY2021-income_statement",
+    "COST-FY2020-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "COST"
+    ],
+    "fiscal_years": [
+     2020,
+     2021
+    ],
+    "metrics": [
+     "net_income"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-043"
+  },
+  {
+   "family": "yoy",
+   "question": "How did PFE's profit margin change from FY2020 to FY2021?",
+   "gold_doc_ids": [
+    "PFE-FY2021-yoy_analysis",
+    "PFE-FY2021-ratios",
+    "PFE-FY2020-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "PFE"
+    ],
+    "fiscal_years": [
+     2020,
+     2021
+    ],
+    "metrics": [
+     "net_margin"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-044"
+  },
+  {
+   "family": "yoy",
+   "question": "How did pfe's bottom line change from FY2022 to FY2023?",
+   "gold_doc_ids": [
+    "PFE-FY2023-yoy_analysis",
+    "PFE-FY2023-income_statement",
+    "PFE-FY2022-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "PFE"
+    ],
+    "fiscal_years": [
+     2022,
+     2023
+    ],
+    "metrics": [
+     "net_income"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-045"
+  },
+  {
+   "family": "yoy",
+   "question": "How did HD's net sales change from FY2024 to FY2025?",
+   "gold_doc_ids": [
+    "HD-FY2025-yoy_analysis",
+    "HD-FY2025-income_statement",
+    "HD-FY2024-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "HD"
+    ],
+    "fiscal_years": [
+     2024,
+     2025
+    ],
+    "metrics": [
+     "revenue"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-046"
+  },
+  {
+   "family": "yoy",
+   "question": "How did NIKE, Inc.'s diluted EPS change from FY2023 to FY2024?",
+   "gold_doc_ids": [
+    "NKE-FY2024-yoy_analysis",
+    "NKE-FY2024-income_statement",
+    "NKE-FY2023-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "NKE"
+    ],
+    "fiscal_years": [
+     2023,
+     2024
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "yoy-047"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare master card and NFLX on diluted EPS in FY2021.",
+   "gold_doc_ids": [
+    "MA-FY2021-income_statement",
+    "NFLX-FY2021-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "MA",
+     "NFLX"
+    ],
+    "fiscal_years": [
+     2021
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-048"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare JNJ and CVX on net sales in FY2020.",
+   "gold_doc_ids": [
+    "JNJ-FY2020-income_statement",
+    "CVX-FY2020-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CVX",
+     "JNJ"
+    ],
+    "fiscal_years": [
+     2020
+    ],
+    "metrics": [
+     "revenue"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-049"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare CAT and johnson & johnson on inventory in FY2021.",
+   "gold_doc_ids": [
+    "CAT-FY2021-balance_sheet",
+    "JNJ-FY2021-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CAT",
+     "JNJ"
+    ],
+    "fiscal_years": [
+     2021
+    ],
+    "metrics": [
+     "inventory"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-050"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare salesforce.com and master card on operating profit in FY2019.",
+   "gold_doc_ids": [
+    "CRM-FY2019-income_statement",
+    "MA-FY2019-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CRM",
+     "MA"
+    ],
+    "fiscal_years": [
+     2019
+    ],
+    "metrics": [
+     "operating_income"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-051"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare azure and brk on shareholders equity in FY2021.",
+   "gold_doc_ids": [
+    "MSFT-FY2021-balance_sheet",
+    "BRK-B-FY2021-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "BRK-B",
+     "MSFT"
+    ],
+    "fiscal_years": [
+     2021
+    ],
+    "metrics": [
+     "shareholders_equity"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-052"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare meta and walmart on cash in FY2019.",
+   "gold_doc_ids": [
+    "META-FY2019-balance_sheet",
+    "WMT-FY2019-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "META",
+     "WMT"
+    ],
+    "fiscal_years": [
+     2019
+    ],
+    "metrics": [
+     "cash_and_equivalents"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-053"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare tsla and procter & gamble on FCF in FY2025.",
+   "gold_doc_ids": [
+    "TSLA-FY2025-ratios",
+    "PG-FY2025-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "PG",
+     "TSLA"
+    ],
+    "fiscal_years": [
+     2025
+    ],
+    "metrics": [
+     "free_cash_flow"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-054"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare netflix and United Parcel Service, Inc. on assets in FY2023.",
+   "gold_doc_ids": [
+    "NFLX-FY2023-balance_sheet",
+    "UPS-FY2023-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "NFLX",
+     "UPS"
+    ],
+    "fiscal_years": [
+     2023
+    ],
+    "metrics": [
+     "total_assets"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-055"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare broadcom and Tesla, Inc. on current ratio in FY2022.",
+   "gold_doc_ids": [
+    "AVGO-FY2022-ratios",
+    "TSLA-FY2022-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AVGO",
+     "TSLA"
+    ],
+    "fiscal_years": [
+     2022
+    ],
+    "metrics": [
+     "current_ratio"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-056"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare KO and Salesforce, Inc. on book value in FY2024.",
+   "gold_doc_ids": [
+    "KO-FY2024-balance_sheet",
+    "CRM-FY2024-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CRM",
+     "KO"
+    ],
+    "fiscal_years": [
+     2024
+    ],
+    "metrics": [
+     "shareholders_equity"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-057"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare meta platforms and abbv on profit in FY2019.",
+   "gold_doc_ids": [
+    "META-FY2019-income_statement",
+    "ABBV-FY2019-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "ABBV",
+     "META"
+    ],
+    "fiscal_years": [
+     2019
+    ],
+    "metrics": [
+     "net_income"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-058"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare DIS and NVIDIA Corporation on total revenue in FY2023.",
+   "gold_doc_ids": [
+    "DIS-FY2023-income_statement",
+    "NVDA-FY2023-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "DIS",
+     "NVDA"
+    ],
+    "fiscal_years": [
+     2023
+    ],
+    "metrics": [
+     "revenue"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-059"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare coca-cola and broadcom on gross margin in FY2020.",
+   "gold_doc_ids": [
+    "KO-FY2020-ratios",
+    "AVGO-FY2020-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AVGO",
+     "KO"
+    ],
+    "fiscal_years": [
+     2020
+    ],
+    "metrics": [
+     "gross_margin"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-060"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare PEP and pfizer on cash from operations in FY2023.",
+   "gold_doc_ids": [
+    "PEP-FY2023-cash_flow",
+    "PFE-FY2023-cash_flow"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "PEP",
+     "PFE"
+    ],
+    "fiscal_years": [
+     2023
+    ],
+    "metrics": [
+     "operating_cash_flow"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-061"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare Microsoft Corporation and coke on capex in FY2019.",
+   "gold_doc_ids": [
+    "MSFT-FY2019-cash_flow",
+    "KO-FY2019-cash_flow"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "KO",
+     "MSFT"
+    ],
+    "fiscal_years": [
+     2019
+    ],
+    "metrics": [
+     "capex"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-062"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare Caterpillar Inc. and xom on net sales in FY2020.",
+   "gold_doc_ids": [
+    "CAT-FY2020-income_statement",
+    "XOM-FY2020-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CAT",
+     "XOM"
+    ],
+    "fiscal_years": [
+     2020
+    ],
+    "metrics": [
+     "revenue"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-063"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare chevron and UPS on net margin in FY2025.",
+   "gold_doc_ids": [
+    "CVX-FY2025-ratios",
+    "UPS-FY2025-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CVX",
+     "UPS"
+    ],
+    "fiscal_years": [
+     2025
+    ],
+    "metrics": [
+     "net_margin"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-064"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare GS and the home depot on assets in FY2025.",
+   "gold_doc_ids": [
+    "GS-FY2025-balance_sheet",
+    "HD-FY2025-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "GS",
+     "HD"
+    ],
+    "fiscal_years": [
+     2025
+    ],
+    "metrics": [
+     "total_assets"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-065"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare broadcom and walt disney on current ratio in FY2019.",
+   "gold_doc_ids": [
+    "AVGO-FY2019-ratios",
+    "DIS-FY2019-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AVGO",
+     "DIS"
+    ],
+    "fiscal_years": [
+     2019
+    ],
+    "metrics": [
+     "current_ratio"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-066"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare broadcom and salesforce.com on R&D in FY2025.",
+   "gold_doc_ids": [
+    "AVGO-FY2025-income_statement",
+    "CRM-FY2025-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AVGO",
+     "CRM"
+    ],
+    "fiscal_years": [
+     2025
+    ],
+    "metrics": [
+     "rnd_expense"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-067"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare PEP and nvidia on inventory in FY2022.",
+   "gold_doc_ids": [
+    "PEP-FY2022-balance_sheet",
+    "NVDA-FY2022-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "NVDA",
+     "PEP"
+    ],
+    "fiscal_years": [
+     2022
+    ],
+    "metrics": [
+     "inventory"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-068"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare aapl and coca-cola on net margin in FY2021.",
+   "gold_doc_ids": [
+    "AAPL-FY2021-ratios",
+    "KO-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AAPL",
+     "KO"
+    ],
+    "fiscal_years": [
+     2021
+    ],
+    "metrics": [
+     "net_margin"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-069"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare NVDA and JPMorgan Chase & Co. on return on equity in FY2020.",
+   "gold_doc_ids": [
+    "NVDA-FY2020-ratios",
+    "JPM-FY2020-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "JPM",
+     "NVDA"
+    ],
+    "fiscal_years": [
+     2020
+    ],
+    "metrics": [
+     "roe"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-070"
+  },
+  {
+   "family": "comparison",
+   "question": "Compare berkshire and CRM on cash from ops in FY2023.",
+   "gold_doc_ids": [
+    "BRK-B-FY2023-cash_flow",
+    "CRM-FY2023-cash_flow"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "BRK-B",
+     "CRM"
+    ],
+    "fiscal_years": [
+     2023
+    ],
+    "metrics": [
+     "operating_cash_flow"
+    ]
+   },
+   "expected_intent": "comparison",
+   "id": "comparison-071"
+  },
+  {
+   "family": "trend",
+   "question": "How has cupertino's long-term debt trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "AAPL-FY2019-balance_sheet",
+    "AAPL-FY2020-balance_sheet",
+    "AAPL-FY2021-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AAPL"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "long_term_debt"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-072"
+  },
+  {
+   "family": "trend",
+   "question": "How has nflx's cash trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "NFLX-FY2019-balance_sheet",
+    "NFLX-FY2020-balance_sheet",
+    "NFLX-FY2021-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "NFLX"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "cash_and_equivalents"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-073"
+  },
+  {
+   "family": "trend",
+   "question": "How has JPMorgan Chase & Co.'s cash from ops trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "JPM-FY2019-cash_flow",
+    "JPM-FY2020-cash_flow",
+    "JPM-FY2021-cash_flow"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "JPM"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "operating_cash_flow"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-074"
+  },
+  {
+   "family": "trend",
+   "question": "How has boeing's earnings per share trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "BA-FY2019-income_statement",
+    "BA-FY2020-income_statement",
+    "BA-FY2021-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "BA"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-075"
+  },
+  {
+   "family": "trend",
+   "question": "How has BAC's return on equity trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "BAC-FY2019-ratios",
+    "BAC-FY2020-ratios",
+    "BAC-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "BAC"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "roe"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-076"
+  },
+  {
+   "family": "trend",
+   "question": "How has nflx's total assets trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "NFLX-FY2019-balance_sheet",
+    "NFLX-FY2020-balance_sheet",
+    "NFLX-FY2021-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "NFLX"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "total_assets"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-077"
+  },
+  {
+   "family": "trend",
+   "question": "How has boeing's shareholders equity trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "BA-FY2019-balance_sheet",
+    "BA-FY2020-balance_sheet",
+    "BA-FY2021-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "BA"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "shareholders_equity"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-078"
+  },
+  {
+   "family": "trend",
+   "question": "How has AMT's ROE trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "AMT-FY2019-ratios",
+    "AMT-FY2020-ratios",
+    "AMT-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AMT"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "roe"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-079"
+  },
+  {
+   "family": "trend",
+   "question": "How has redmond's earnings per share trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "MSFT-FY2019-income_statement",
+    "MSFT-FY2020-income_statement",
+    "MSFT-FY2021-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "MSFT"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-080"
+  },
+  {
+   "family": "trend",
+   "question": "How has googl's R&D trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "GOOGL-FY2019-income_statement",
+    "GOOGL-FY2020-income_statement",
+    "GOOGL-FY2021-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "GOOGL"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "rnd_expense"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-081"
+  },
+  {
+   "family": "trend",
+   "question": "How has redmond's shareholders equity trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "MSFT-FY2019-balance_sheet",
+    "MSFT-FY2020-balance_sheet",
+    "MSFT-FY2021-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "MSFT"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "shareholders_equity"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-082"
+  },
+  {
+   "family": "trend",
+   "question": "How has cvx's capex trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "CVX-FY2019-cash_flow",
+    "CVX-FY2020-cash_flow",
+    "CVX-FY2021-cash_flow"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CVX"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "capex"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-083"
+  },
+  {
+   "family": "trend",
+   "question": "How has Caterpillar Inc.'s current ratio trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "CAT-FY2019-ratios",
+    "CAT-FY2020-ratios",
+    "CAT-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CAT"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "current_ratio"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-084"
+  },
+  {
+   "family": "trend",
+   "question": "How has coca-cola's current ratio trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "KO-FY2019-ratios",
+    "KO-FY2020-ratios",
+    "KO-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "KO"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "current_ratio"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-085"
+  },
+  {
+   "family": "trend",
+   "question": "How has nke's net sales trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "NKE-FY2019-income_statement",
+    "NKE-FY2020-income_statement",
+    "NKE-FY2021-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "NKE"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "revenue"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-086"
+  },
+  {
+   "family": "trend",
+   "question": "How has brk's ROE trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "BRK-B-FY2019-ratios",
+    "BRK-B-FY2020-ratios",
+    "BRK-B-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "BRK-B"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "roe"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-087"
+  },
+  {
+   "family": "trend",
+   "question": "How has home depot's earnings per share trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "HD-FY2019-income_statement",
+    "HD-FY2020-income_statement",
+    "HD-FY2021-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "HD"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "eps_diluted"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-088"
+  },
+  {
+   "family": "trend",
+   "question": "How has JPMorgan Chase & Co.'s profit margin trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "JPM-FY2019-ratios",
+    "JPM-FY2020-ratios",
+    "JPM-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "JPM"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "net_margin"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-089"
+  },
+  {
+   "family": "trend",
+   "question": "How has Broadcom Inc.'s net margin trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "AVGO-FY2019-ratios",
+    "AVGO-FY2020-ratios",
+    "AVGO-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "AVGO"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "net_margin"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-090"
+  },
+  {
+   "family": "trend",
+   "question": "How has chevron's research and development trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "CVX-FY2019-income_statement",
+    "CVX-FY2020-income_statement",
+    "CVX-FY2021-income_statement"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CVX"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "rnd_expense"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-091"
+  },
+  {
+   "family": "trend",
+   "question": "How has ABBV's debt to equity trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "ABBV-FY2019-ratios",
+    "ABBV-FY2020-ratios",
+    "ABBV-FY2021-ratios"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "ABBV"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "debt_to_equity"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-092"
+  },
+  {
+   "family": "trend",
+   "question": "How has salesforce's capital expenditure trended from FY2019 to FY2022?",
+   "gold_doc_ids": [
+    "CRM-FY2019-cash_flow",
+    "CRM-FY2020-cash_flow",
+    "CRM-FY2021-cash_flow",
+    "CRM-FY2022-cash_flow"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "CRM"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "metrics": [
+     "capex"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-093"
+  },
+  {
+   "family": "trend",
+   "question": "How has oracle's book value trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "ORCL-FY2019-balance_sheet",
+    "ORCL-FY2020-balance_sheet",
+    "ORCL-FY2021-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "ORCL"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "shareholders_equity"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-094"
+  },
+  {
+   "family": "trend",
+   "question": "How has NIKE, Inc.'s cash trended from FY2019 to FY2021?",
+   "gold_doc_ids": [
+    "NKE-FY2019-balance_sheet",
+    "NKE-FY2020-balance_sheet",
+    "NKE-FY2021-balance_sheet"
+   ],
+   "gold_constraints": {
+    "tickers": [
+     "NKE"
+    ],
+    "fiscal_years": [
+     2019,
+     2020,
+     2021
+    ],
+    "metrics": [
+     "cash_and_equivalents"
+    ]
+   },
+   "expected_intent": "trend",
+   "id": "trend-095"
+  },
+  {
+   "family": "portfolio",
+   "question": "What is my portfolio's exposure by sector?",
+   "gold_doc_ids": [],
+   "gold_constraints": {
+    "doc_types": [
+     "portfolio_position",
+     "portfolio_summary"
+    ]
+   },
+   "expected_intent": "portfolio",
+   "expected_tools": [
+    "exposure"
+   ],
+   "id": "portfolio-096"
+  },
+  {
+   "family": "portfolio",
+   "question": "How concentrated is my portfolio?",
+   "gold_doc_ids": [],
+   "gold_constraints": {
+    "doc_types": [
+     "portfolio_position",
+     "portfolio_summary"
+    ]
+   },
+   "expected_intent": "portfolio",
+   "expected_tools": [
+    "concentration"
+   ],
+   "id": "portfolio-097"
+  },
+  {
+   "family": "portfolio",
+   "question": "What are my largest holdings?",
+   "gold_doc_ids": [],
+   "gold_constraints": {
+    "doc_types": [
+     "portfolio_position",
+     "portfolio_summary"
+    ]
+   },
+   "expected_intent": "portfolio",
+   "expected_tools": [
+    "concentration"
+   ],
+   "id": "portfolio-098"
+  },
+  {
+   "family": "portfolio",
+   "question": "List the positions in my Rollover IRA.",
+   "gold_doc_ids": [],
+   "gold_constraints": {
+    "doc_types": [
+     "portfolio_position",
+     "portfolio_summary"
+    ]
+   },
+   "expected_intent": "portfolio",
+   "expected_tools": [
+    "holdings"
+   ],
+   "id": "portfolio-099"
+  },
+  {
+   "family": "portfolio",
+   "question": "What is my look-through share of FY2024 net income?",
+   "gold_doc_ids": [],
+   "gold_constraints": {
+    "doc_types": [
+     "portfolio_position",
+     "portfolio_summary"
+    ]
+   },
+   "expected_intent": "portfolio",
+   "expected_tools": [
+    "look_through"
+   ],
+   "id": "portfolio-100"
+  },
+  {
+   "family": "portfolio",
+   "question": "Which of my holdings had operating margin decline in FY2024?",
+   "gold_doc_ids": [],
+   "gold_constraints": {
+    "doc_types": [
+     "portfolio_position",
+     "portfolio_summary"
+    ]
+   },
+   "expected_intent": "portfolio",
+   "expected_tools": [
+    "screen_holdings"
+   ],
+   "id": "portfolio-101"
+  },
+  {
+   "family": "portfolio",
+   "question": "How much of my book is in the Information Technology sector?",
+   "gold_doc_ids": [],
+   "gold_constraints": {
+    "doc_types": [
+     "portfolio_position",
+     "portfolio_summary"
+    ]
+   },
+   "expected_intent": "portfolio",
+   "expected_tools": [
+    "exposure"
+   ],
+   "id": "portfolio-102"
+  },
+  {
+   "family": "portfolio",
+   "question": "What is my portfolio's look-through free cash flow for FY2024?",
+   "gold_doc_ids": [],
+   "gold_constraints": {
+    "doc_types": [
+     "portfolio_position",
+     "portfolio_summary"
+    ]
+   },
+   "expected_intent": "portfolio",
+   "expected_tools": [
+    "look_through"
+   ],
+   "id": "portfolio-103"
+  },
+  {
+   "family": "out_of_scope",
+   "question": "Should I buy Nvidia stock right now?",
+   "gold_doc_ids": [],
+   "gold_constraints": {},
+   "expected_intent": "out_of_scope",
+   "id": "out_of_scope-104"
+  },
+  {
+   "family": "out_of_scope",
+   "question": "What will Apple's share price be next quarter?",
+   "gold_doc_ids": [],
+   "gold_constraints": {},
+   "expected_intent": "out_of_scope",
+   "id": "out_of_scope-105"
+  },
+  {
+   "family": "out_of_scope",
+   "question": "Give me a price target for Tesla.",
+   "gold_doc_ids": [],
+   "gold_constraints": {},
+   "expected_intent": "out_of_scope",
+   "id": "out_of_scope-106"
+  },
+  {
+   "family": "out_of_scope",
+   "question": "Is Microsoft a good investment for my retirement?",
+   "gold_doc_ids": [],
+   "gold_constraints": {},
+   "expected_intent": "out_of_scope",
+   "id": "out_of_scope-107"
+  },
+  {
+   "family": "out_of_scope",
+   "question": "What should I invest in this year?",
+   "gold_doc_ids": [],
+   "gold_constraints": {},
+   "expected_intent": "out_of_scope",
+   "id": "out_of_scope-108"
+  },
+  {
+   "family": "out_of_scope",
+   "question": "Predict Amazon's revenue for FY2030.",
+   "gold_doc_ids": [],
+   "gold_constraints": {},
+   "expected_intent": "out_of_scope",
+   "id": "out_of_scope-109"
+  }
+ ]
+}

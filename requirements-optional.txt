@@ -1,0 +1,4 @@
+# Alternate LLM providers. The service works with any one of these;
+# install only what you have a key for.
+openai>=1.40              # OpenAI + OpenRouter (base_url override)
+google-generativeai>=0.7  # Gemini

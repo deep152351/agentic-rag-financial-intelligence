@@ -1,0 +1,233 @@
+{
+  "hybrid_rrf": {
+    "label": "RETRIEVAL \u2014 hybrid (BGE + BM25) fused with RRF, filters on",
+    "cases": 110,
+    "recall_at_10": 0.9973958333333334,
+    "hit_at_10": 1.0,
+    "mrr": 0.8642361111111111,
+    "filter_compliance": 0.9913461538461538,
+    "intent_accuracy": 1.0,
+    "constraint_resolution": {
+      "ticker": {
+        "precision": 0.9545454545454546,
+        "recall": 1.0,
+        "f1": 0.9545454545454546
+      },
+      "fiscal_year": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      },
+      "metric": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      }
+    },
+    "exact_constraint_match": 0.9181818181818182,
+    "latency_ms": {
+      "p50": 232.85494999981893,
+      "p95": 381.48785500070517,
+      "mean": 226.38886909087225
+    },
+    "tool_selection_accuracy": 1.0
+  },
+  "dense-only  (BGE)|filters=True": {
+    "label": "dense-only  (BGE) / filters=on",
+    "cases": 110,
+    "recall_at_10": 0.9973958333333334,
+    "hit_at_10": 1.0,
+    "mrr": 0.8708333333333332,
+    "filter_compliance": 0.9855769230769231,
+    "intent_accuracy": 1.0,
+    "constraint_resolution": {
+      "ticker": {
+        "precision": 0.9545454545454546,
+        "recall": 1.0,
+        "f1": 0.9545454545454546
+      },
+      "fiscal_year": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      },
+      "metric": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      }
+    },
+    "exact_constraint_match": 0.9181818181818182,
+    "latency_ms": {
+      "p50": 155.8291499995903,
+      "p95": 246.60665999999765,
+      "mean": 150.62268545446966
+    },
+    "tool_selection_accuracy": 1.0
+  },
+  "sparse-only (BM25)|filters=True": {
+    "label": "sparse-only (BM25) / filters=on",
+    "cases": 110,
+    "recall_at_10": 0.9973958333333334,
+    "hit_at_10": 1.0,
+    "mrr": 0.8654513888888888,
+    "filter_compliance": 0.9855769230769231,
+    "intent_accuracy": 1.0,
+    "constraint_resolution": {
+      "ticker": {
+        "precision": 0.9545454545454546,
+        "recall": 1.0,
+        "f1": 0.9545454545454546
+      },
+      "fiscal_year": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      },
+      "metric": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      }
+    },
+    "exact_constraint_match": 0.9181818181818182,
+    "latency_ms": {
+      "p50": 75.91145000060351,
+      "p95": 117.95454999983122,
+      "mean": 70.54359909092123
+    },
+    "tool_selection_accuracy": 1.0
+  },
+  "hybrid+RRF|filters=True": {
+    "label": "RETRIEVAL \u2014 hybrid (BGE + BM25) fused with RRF, filters on",
+    "cases": 110,
+    "recall_at_10": 0.9973958333333334,
+    "hit_at_10": 1.0,
+    "mrr": 0.8642361111111111,
+    "filter_compliance": 0.9913461538461538,
+    "intent_accuracy": 1.0,
+    "constraint_resolution": {
+      "ticker": {
+        "precision": 0.9545454545454546,
+        "recall": 1.0,
+        "f1": 0.9545454545454546
+      },
+      "fiscal_year": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      },
+      "metric": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      }
+    },
+    "exact_constraint_match": 0.9181818181818182,
+    "latency_ms": {
+      "p50": 232.85494999981893,
+      "p95": 381.48785500070517,
+      "mean": 226.38886909087225
+    },
+    "tool_selection_accuracy": 1.0
+  },
+  "dense-only  (BGE)|filters=False": {
+    "label": "dense-only  (BGE) / filters=off",
+    "cases": 110,
+    "recall_at_10": 0.7855902777777778,
+    "hit_at_10": 0.8854166666666666,
+    "mrr": 0.5514591600529101,
+    "filter_compliance": 0.2951923076923077,
+    "intent_accuracy": 1.0,
+    "constraint_resolution": {
+      "ticker": {
+        "precision": 0.9545454545454546,
+        "recall": 1.0,
+        "f1": 0.9545454545454546
+      },
+      "fiscal_year": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      },
+      "metric": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      }
+    },
+    "exact_constraint_match": 0.9181818181818182,
+    "latency_ms": {
+      "p50": 128.26889999996638,
+      "p95": 200.78275499981828,
+      "mean": 125.89784909095297
+    },
+    "tool_selection_accuracy": 1.0
+  },
+  "sparse-only (BM25)|filters=False": {
+    "label": "sparse-only (BM25) / filters=off",
+    "cases": 110,
+    "recall_at_10": 0.9262152777777778,
+    "hit_at_10": 0.9895833333333334,
+    "mrr": 0.643832671957672,
+    "filter_compliance": 0.33653846153846156,
+    "intent_accuracy": 1.0,
+    "constraint_resolution": {
+      "ticker": {
+        "precision": 0.9545454545454546,
+        "recall": 1.0,
+        "f1": 0.9545454545454546
+      },
+      "fiscal_year": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      },
+      "metric": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      }
+    },
+    "exact_constraint_match": 0.9181818181818182,
+    "latency_ms": {
+      "p50": 55.40170000040234,
+      "p95": 87.18929499927981,
+      "mean": 51.49651272728409
+    },
+    "tool_selection_accuracy": 1.0
+  },
+  "hybrid+RRF|filters=False": {
+    "label": "hybrid+RRF / filters=off",
+    "cases": 110,
+    "recall_at_10": 0.9279513888888888,
+    "hit_at_10": 0.9583333333333334,
+    "mrr": 0.7157118055555555,
+    "filter_compliance": 0.33557692307692305,
+    "intent_accuracy": 1.0,
+    "constraint_resolution": {
+      "ticker": {
+        "precision": 0.9545454545454546,
+        "recall": 1.0,
+        "f1": 0.9545454545454546
+      },
+      "fiscal_year": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      },
+      "metric": {
+        "precision": 0.9636363636363636,
+        "recall": 1.0,
+        "f1": 0.9636363636363636
+      }
+    },
+    "exact_constraint_match": 0.9181818181818182,
+    "latency_ms": {
+      "p50": 196.8388999994204,
+      "p95": 302.14148499962903,
+      "mean": 189.83571727271325
+    },
+    "tool_selection_accuracy": 1.0
+  }
+}

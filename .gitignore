@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Raw SEC companyfacts cache (~165 MB, re-fetchable with scripts.fetch_sec)
+data/raw/
+
+# Embedded Qdrant index (rebuild with scripts.index_corpus)
+data/qdrant/
+
+# Local fastembed model cache
+.fastembed_cache/
